@@ -1,0 +1,52 @@
+{
+  "name": "babylon-cube-luts",
+  "version": "0.0.1",
+  "description": "an extension to use .cube LUTS in babylonjs",
+  "author": "heaust-ops",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Heaust-ops/babylon-cube-luts/issues"
+  },
+  "homepage": "https://github.com/Heaust-ops/babylon-cube-luts#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heaust-ops/babylon-cube-luts.git"
+  },
+  "main": "./dist/cubeLuts.cjs.js",
+  "module": "./dist/cubeLuts.es.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "typescript",
+    "javascript",
+    "sound",
+    "color",
+    "grading",
+    "cube",
+    "luts",
+    "blender",
+    "webgl",
+    "babylonjs",
+    "lights",
+    "performance"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.demo.config.ts",
+    "build": "rm -rf dist && tsc && vite build",
+    "preview": "vite preview",
+    "build:demo": "vite build --config vite.demo.config.ts"
+  },
+  "devDependencies": {
+    "@babylonjs/core": "^6.0.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^4.2.4",
+    "vite-plugin-glsl": "^1.3.0"
+  },
+  "peerDependencies": {
+    "@babylonjs/core": ">=6.0.0"
+  }
+}
