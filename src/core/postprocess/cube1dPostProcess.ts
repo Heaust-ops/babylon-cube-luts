@@ -44,11 +44,12 @@ const getCubeColorGrade1DPostProcess = (shadersStore: { [key: string]: string },
     engine
   );
 
-  const e = pp.getEffect();
-  e.setTexture("lut_tex", dataTex);
-  e.setFloat("lut_size", data.LUT_1D_SIZE!);
-  e.setFloat3("domain_min", ...data.DOMAIN_MIN);
-  e.setFloat3("domain_max", ...data.DOMAIN_MAX);
+  pp.onApplyObservable.addOnce((e) => {
+    e.setTexture("lut_tex", dataTex);
+    e.setFloat("lut_size", data.LUT_1D_SIZE!);
+    e.setFloat3("domain_min", ...data.DOMAIN_MIN);
+    e.setFloat3("domain_max", ...data.DOMAIN_MAX);
+  });
 
   return pp;
 }
