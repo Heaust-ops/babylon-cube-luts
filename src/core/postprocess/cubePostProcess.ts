@@ -14,7 +14,7 @@ const getCubePostProcess = (shadersStore: { [key: string]: string }, scene: Scen
       return new Promise((res) => {
         parser.getParsedFromUrl(dataOrUrl as string).then((parsed) => {
           if (!parsed) return res(null);
-          return res(getCubePostProcess(shadersStore, scene, dataOrUrl, camera));
+          return res(getCubePostProcess(shadersStore, scene, parsed, camera));
         });
       });
     }

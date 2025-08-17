@@ -1,6 +1,6 @@
 {
   "name": "babylon-cube-luts",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "an extension to use .cube LUTS in babylonjs",
   "author": "heaust-ops",
   "license": "MIT",
