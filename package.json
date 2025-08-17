@@ -12,8 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/Heaust-ops/babylon-cube-luts.git"
   },
-  "main": "./dist/cubeLuts.cjs.js",
-  "module": "./dist/cubeLuts.es.js",
+  "main": "./dist/cubeLut.cjs.js",
+  "module": "./dist/cubeLut.es.js",
   "types": "./dist/types/index.d.ts",
   "files": [
     "dist"

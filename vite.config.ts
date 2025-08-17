@@ -6,8 +6,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/index.ts",
-      name: "DeferredLighting",
-      fileName: (format) => `deferredLighting.${format}.js`,
+      name: "CubeLut",
+      fileName: (format) => `cubeLut.${format}.js`,
       formats: ["es", "cjs", "umd"],
     },
     rollupOptions: {
